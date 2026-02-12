@@ -1,20 +1,83 @@
-.body{
-    background-color: black;
-    height:100vh ;/*900px*/
+body {
+    background-color: hsl(0, 0%, 8%);
+    height: 100vh;/*900px*/
     justify-content: center;
     align-items: center;
     text-align: center;
     margin: 0;
     display: flex;
+    font-family: 'Inter', 'Sans Serif';
+    color: white;
 }
 
-.card{
-    background-color: #fff;
+/*cartão*/
+.card {
+    background-color: hsl(0, 0, 12%);
     font-size: 14px;
-    padding: 20px;
+    padding: 40px;
     line-height: 1.5;
     width: 90%;
-    max-width: 320px;
+    max-width: 380px;
     box-shadow: 8px 8px 8px #5e5d5d;
-    border: 1px solid;
+    border-radius: 12px;
 }
+
+.card img {
+    height: 88px;
+    width: 88px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 24px;
+}
+
+
+.card h1 {
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.2;
+    padding: 0px 10px;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.card h2 {
+   color: hsl(75, 94%, 57%);
+   font-weight:700 ;
+   font-size: 14px;
+   margin-bottom: 24px;
+
+}
+.card p {
+    font-size: 14px;
+    margin-bottom: 24px;
+    opacity: 0.9;
+}
+
+
+
+/* estilo botao links*/
+
+.perfis ul{
+    list-style: none;
+    padding: 0;
+}
+  .perfis li{
+    margin-bottom: 16px;
+  }
+  .perfis a{
+    display: block;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s ;
+  }
+
+  /*efeito hover*/
+  .perfis a:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 12%);
+  }
